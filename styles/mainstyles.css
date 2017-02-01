@@ -1,0 +1,131 @@
+/*font-family: 'Yellowtail', cursive;
+font-family: 'Montserrat', sans-serif;
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 62.5%;
+    font-family: 'Montserrat', sans-serif;
+    background: #fff;
+}
+a:link,a:visited{
+  text-decoration: none;
+  color:inherit;
+}
+
+/*styles for banner section*/
+#banner {
+    width: 100%;
+    background: linear-gradient(rgba(255, 130, 129, 0.8), rgba(243, 223, 125, 0.8)), url("../imgs/bannerBackground.png");
+    background-size: cover;
+}
+::selection{
+background:rgba(255,255,255,0.4);
+}
+
+.banner-container {
+  width:65%;
+  margin:0 auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  color:#fff;
+}
+header{
+  display:flex;
+  justify-content: space-between;
+  width:100%;
+  padding:2em 0;
+  align-items: center;
+}
+.logo{
+  font-size:3em;
+  font-weight: bold;
+
+}
+nav ul{
+  list-style-type: none;
+  display:flex;
+  font-size:1.5em;
+  text-transform:uppercase;
+}
+
+nav ul li{
+  margin:0 1.2em;
+}
+.banner{
+  width:100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  padding:11em 0;
+}
+h1{
+  font-size:6em;
+  font-family: 'Yellowtail', cursive;
+  font-weight: lighter;
+}
+.welcome{
+  font-size:10em;
+  font-weight: bold;
+  text-align: center;
+  line-height: 1;
+  text-transform: uppercase;
+}
+.learn-more{
+  outline:0;
+  padding:0.6em 2.4em;
+  background:transparent;
+  border:2px solid #fff;
+  color:#fff;
+  font-weight:bold;
+  text-transform: uppercase;
+  cursor:pointer;
+}
+.banner hr{
+  width:50px;
+  height:1px;
+  margin:40px 0;
+  color:#fff;
+  background:#fff;
+  border:0;
+}
+.sliders{
+  display:flex;
+  justify-content:space-between;;
+  width:100%;
+}
+.slider{
+  width:calc(100%/4 - 4em);
+  padding:20px 0;
+}
+.slider hr{
+  width:100%;
+  height:2px;
+  margin:10px 0;
+  background:#fff;
+  border:0;
+}
+
+.progress{
+  font-size:1.4em;
+  font-weight: lighter;
+}
+.progress span{
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+/*styles for whate-we-do1 section*/
+#what-we-do1{
+  width:100%;
+}
+.what-we-do-container{
+  width:65%;
+  margin:0 auto;
+}
