@@ -31,8 +31,24 @@
                         <li><a href="http://allegro.pl" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
                         <li><a href="http://google.com" target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                     </ul>
+
                 </nav>
+                <div class="nav-button">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
             </header>
+
+            <div class="mob-menu">
+                <ul>
+                    <li><a href="#what-we-do1">About</a></li>
+                    <li><a href="#we-work-with">Service</a></li>
+                    <li><a href="#for-all-devices">Work</a></li>
+                    <li><a href="#our-stories">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="http://allegro.pl" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <li><a href="http://google.com" target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
             <div class="banner">
                 <h1>Creative Template</h1>
                 <p class="welcome">Welcome<br>To Mogo</p>
@@ -225,7 +241,6 @@
                             adipisicing elit. Dicta distinctio ut debitis ad, hic est nobis, dolor dolores officiis libero! Eveniet beatae, velit asperiores cumque optio doloribus autem, quo quos!</p>
                     </details>
                 </div>
-
             </div>
         </div>
     </section>
@@ -267,7 +282,6 @@
             <p class="bolder">Meet our team</p>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione tempora quis voluptates nostrum, rerum magnam. Dolor deleniti totam, enim a, repellat nihil fugit voluptate nulla asperiores ab labore blanditiis eaque.</p>
-
             <div class="members">
                 <div class="member">
                     <div class="member-face face1">
@@ -285,7 +299,6 @@
                     <h4>Mathew Dix</h4>
                     <p class="job">Graphic Designer</p>
                 </div>
-
                 <div class="member">
                     <div class="member-face face2">
                         <div class="member-social">
@@ -324,9 +337,9 @@
     <div class="logos">
         <div class="container logos-container">
             <img src="imgs/logo1.png" alt="">
-            <img src="imgs/logo2.png" alt="">
-            <img src="imgs/logo3.png" alt="">
             <img src="imgs/logo4.png" alt="">
+            <img src="imgs/logo3.png" alt="">
+            <img src="imgs/logo2.png" alt="">
             <img src="imgs/logo5.png" alt="">
             <img src="imgs/logo6.png" alt="">
         </div>
@@ -542,9 +555,7 @@
                 height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                 <i class="fa fa-times cross" aria-hidden="true"></i>
         </div>
-
     </div>
-
     <div id="contact" class="page-details container">
         <div class="about">
             <h3>MoGo</h3>
@@ -607,38 +618,18 @@
             </div>
             <a href="http://instagram.com" target="_blank">View more photos</a>
         </div>
-
     </div>
     <footer>&copy; 2016 MoGo free PSD template by <a href="https://www.behance.net/laaqiq" target="_blank"><span>Laaqiq</span></a></footer>
     <script src="functions/closeDetails.js"></script>
     <script src="functions/mapPopup.js"></script>
     <script src="functions/scrollProgress.js"></script>
     <script src="functions/fixMenu.js"></script>
+    <script src="functions/mobMenu.js"></script>
 
     <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
-    <script>
-        $(document).ready(function() {
-            $('.slicker-slider').slick({
-
-            });
-            $(function() {
-                $('a[href*="#"]:not([href="#"])').click(function() {
-                    if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-                        var target = $(this.hash);
-                        target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                        if (target.length) {
-                            $('html, body').animate({
-                                scrollTop: target.offset().top
-                            }, 1000);
-                            return false;
-                        }
-                    }
-                });
-            });
-        });
-    </script>
+      <script src="functions/queryScripts.js"></script>
     <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 
