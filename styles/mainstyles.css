@@ -1,7 +1,3 @@
-/*font-family: 'Yellowtail', cursive;
-font-family: 'Montserrat', sans-serif;
-*/
-
 * {
     margin: 0;
     padding: 0;
@@ -23,7 +19,7 @@ a:link, a:visited {
 /*styles for banner section*/
 
 #banner {
-    background: linear-gradient(rgba(255, 130, 129, 0.8), rgba(243, 223, 125, 0.8)), url("../imgs/bannerBackground.png");
+    background: linear-gradient(rgba(255, 130, 129, 0.8), rgba(243, 223, 125, 0.8)), url("../imgs/bannerBackground.png") 50% 0;
     background-size: cover;
 }
 
@@ -53,22 +49,73 @@ header {
     padding: 2em 0;
     align-items: center;
 }
-header.fixed{
-  position:fixed;
-  top:0;
-  width:100%;
-  justify-content: space-around;
-  background:linear-gradient(rgba(230,130,130,.8) 90%,rgba(255,255,255,0));
-  z-index:3;
-  transition: all .4s;
-  color:black;
-  padding:0 0 1em 0;
-font-size: 1.2em;
+
+header.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    justify-content: space-around;
+    background: linear-gradient(rgba(230, 130, 130, .8) 90%, rgba(255, 255, 255, 0));
+    z-index: 3;
+    transition: all .4s;
+    color: #fff;
+    padding: 0 0 1em 0;
+    font-size: 1.2em;
 }
 
 .logo {
     font-size: 3em;
     font-weight: bold;
+}
+
+
+/*styles for mob-menu*/
+
+.nav-button {
+    font-size: 4em;
+    display: none;
+    cursor: pointer;
+}
+
+.mob-menu {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 5;
+    width: 100vw;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-size: 5em;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    cursor: crosshair;
+}
+
+.mob-menu.opened {
+    display: flex;
+}
+
+.mob-menu ul {
+    list-style-type: none;
+    text-align: center;
+    color: #fff;
+    /*^if bck-clip isn't working*/
+    color: transparent;
+    background: linear-gradient(rgba(255, 130, 129, 1), rgba(243, 223, 125, 0.9));
+    -webkit-background-clip: text;
+}
+
+.mob-menu ul li {
+    padding: 0.2vh 0;
+}
+
+.mob-menu ul li i {
+    color: rgba(243, 223, 125, 0.8);
 }
 
 nav ul {
@@ -81,21 +128,28 @@ nav ul {
 nav ul li {
     margin: 0 1.2em;
     position: relative;
+    transition: color .3s;
 }
-nav ul li.activated{
-color: rgb(243, 223, 125);
 
+nav ul li:hover {
+    color: rgb(243, 223, 125);
 }
-nav ul li.activated:after{
-  content:'';
-  height:2px;
-  position:absolute;
-  bottom:-10px;
-  left:0;
-  right:0;
-  background:rgb(243, 223, 125);
 
+nav ul li:after {
+    content: '';
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(243, 223, 125);
+    opacity: 0;
+    transition: all .3s;
+}
 
+nav ul li:hover:after {
+    opacity: 1;
+    bottom: -10px;
 }
 
 .banner {
@@ -181,10 +235,6 @@ h1 {
 
 /*styles for whate-we-do1 section*/
 
-#what-we-do1 {
-    width: 100%;
-}
-
 h2 {
     font-size: 3em;
     font-family: 'Yellowtail', cursive;
@@ -230,6 +280,14 @@ hr~p {
     position: relative;
 }
 
+.img:nth-of-type(2) {
+    margin: 0 20px;
+}
+
+.img>img {
+    width: 100%;
+}
+
 .img:hover {
     transform: translate(-10px, -10px);
     box-shadow: 10px 10px 0 0 #95E1D4;
@@ -260,6 +318,9 @@ hr~p {
     opacity: 0;
     transition: opacity .3s .2s ease-in;
     position: absolute;
+    top: 40%;
+    right: 0;
+    left: 0;
 }
 
 .img:hover .photo-info {
@@ -306,15 +367,12 @@ hr~p {
 
 /*styles for we-work-with section*/
 
-#we-work-with {
-    width: 100%;
-}
-
 .row {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 40px 0;
+    flex-wrap: wrap;
 }
 
 .row:first-of-type {
@@ -375,10 +433,6 @@ h3 {
 
 
 /*styles for service section*/
-
-#service {
-    width: 100%;
-}
 
 .services-info {
     margin-top: 50px;
@@ -615,13 +669,11 @@ details p::-webkit-scrollbar-thumb {
 .face1 {
     background: url("../imgs/fertig.png") no-repeat;
     background-size: cover;
-    ;
 }
 
 .face2 {
     background: url("../imgs/campbell.png") no-repeat;
     background-size: cover;
-    ;
 }
 
 .face3 {
@@ -757,8 +809,8 @@ h4 {
 /*styles for slicker2*/
 
 #happy-clients {
-    width: 100%;
-    background: url("../imgs/whatpeoplesaybck.png") no-repeat;
+    background: url("../imgs/whatpeoplesaybck.png") 50% 0;
+    no-repeat;
     background-size: cover;
 }
 
@@ -779,7 +831,6 @@ h4 {
 
 .person img {
     margin-right: 20px;
-    /*float:left;*/
 }
 
 .person-info {
@@ -789,7 +840,6 @@ h4 {
 .person-info>* {
     text-align: left;
     font-size: 1.4em;
-    /*float:right;*/
     margin: 10px;
 }
 
@@ -890,7 +940,7 @@ h4 {
 
 .map-banner {
     width: 100%;
-    background: url("../imgs/openmapbck.png") no-repeat;
+    background: url("../imgs/openmapbck.png") 50% 0 no-repeat;
     background-size: cover;
     display: flex;
     align-items: center;
