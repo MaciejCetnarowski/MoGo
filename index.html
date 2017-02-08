@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="styles/mainstyles.css">
     <link rel="stylesheet" href="styles/rwd-styles.css">
 
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css">
+    <link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css" />
     <!-- awesome fonts! -->
     <link rel="stylesheet" href="styles/font-awesome-4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Yellowtail" rel="stylesheet">
@@ -18,19 +20,35 @@
     <section id="banner">
         <div class="banner-container">
             <header>
-                <a href="#" class="logo">MoGo</a>
+                <a href="#banner" class="logo">MoGo</a>
                 <nav>
                     <ul>
-                        <li><a href="">About</a></li>
-                        <li><a href="">Service</a></li>
-                        <li><a href="">Work</a></li>
-                        <li><a href="">Blog</a></li>
-                        <li><a href="">Contact</a></li>
-                        <li><a href=""><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
-                        <li><a href=""><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                        <li><a href="#what-we-do1">About</a></li>
+                        <li><a href="#we-work-with">Service</a></li>
+                        <li><a href="#for-all-devices">Work</a></li>
+                        <li><a href="#our-stories">Blog</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="http://allegro.pl" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                        <li><a href="http://google.com" target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a></li>
                     </ul>
+
                 </nav>
+                <div class="nav-button">
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
             </header>
+
+            <div class="mob-menu">
+                <ul>
+                    <li><a href="#what-we-do1">About</a></li>
+                    <li><a href="#we-work-with">Service</a></li>
+                    <li><a href="#for-all-devices">Work</a></li>
+                    <li><a href="#our-stories">Blog</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="http://allegro.pl" target="_blank"><i class="fa fa-shopping-cart" aria-hidden="true"></i></a></li>
+                    <li><a href="http://google.com" target="_blank"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
             <div class="banner">
                 <h1>Creative Template</h1>
                 <p class="welcome">Welcome<br>To Mogo</p>
@@ -40,25 +58,33 @@
             <div class="sliders">
                 <!-- in work -->
                 <div class="slider">
-                    <hr>
+                    <div class="progress-slider">
+                        <div class="progress-line line1"></div>
+                    </div>
                     <div class="progress">
                         <p><span>01 </span>INTRO</p>
                     </div>
                 </div>
                 <div class="slider">
-                    <hr>
+                    <div class="progress-slider">
+                        <div class="progress-line line2"></div>
+                    </div>
                     <div class="progress">
                         <p><span>02 </span>WORK</p>
                     </div>
                 </div>
                 <div class="slider">
-                    <hr>
+                    <div class="progress-slider">
+                        <div class="progress-line line3"></div>
+                    </div>
                     <div class="progress">
                         <p><span>03 </span>ABOUT</p>
                     </div>
                 </div>
                 <div class="slider">
-                    <hr>
+                    <div class="progress-slider">
+                        <div class="progress-line line4"></div>
+                    </div>
                     <div class="progress">
                         <p><span>04 </span>CONTACTS</p>
                     </div>
@@ -67,25 +93,28 @@
         </div>
     </section>
     <section id="what-we-do1">
-        <div class="what-we-do-container">
+        <div class="what-we-do-container container">
             <h2>What We Do</h2>
             <p class="bolder">Story About Us</p>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione tempora quis voluptates nostrum, rerum magnam. Dolor deleniti totam, enim a, repellat nihil fugit voluptate nulla asperiores ab labore blanditiis eaque.</p>
             <div class="img-container">
-                <div class="img photo1">
+                <div class="img">
+                    <img src="imgs/whatwedo2.png" alt="">
                     <div class="photo-info">
                         <img src="imgs/USERS.png" alt="">
                         <p>Super team</p>
                     </div>
                 </div>
-                <div class="img photo2">
+                <div class="img">
+                    <img src="imgs/whatwedo2.png" alt="">
                     <div class="photo-info">
                         <img src="imgs/USERS.png" alt="">
                         <p>Super team</p>
                     </div>
                 </div>
-                <div class="img photo3">
+                <div class="img">
+                    <img src="imgs/whatwedo2.png" alt="">
                     <div class="photo-info">
                         <img src="imgs/USERS.png" alt="">
                         <p>Super team</p>
@@ -119,7 +148,7 @@
         </div>
     </div>
     <section id="we-work-with">
-        <div class="we-work-with-container">
+        <div class="we-work-with-container container">
             <h2>We work with</h2>
             <p class="bolder">Amazing Services</p>
             <hr>
@@ -177,13 +206,13 @@
             <p class="bolder">Unique Design</p>
             <hr>
             <div class="devices">
-                <div class="tablet"></div>
-                <div class="smartphone"></div>
+                <div class="tablet"><img src="imgs/tablet.png" alt=""></div>
+                <div class="smartphone"><img src="imgs/whitePhone.png" alt=""></div>
             </div>
         </div>
     </section>
     <section id="service">
-        <div class="service-container">
+        <div class="service-container container">
             <h2>Service</h2>
             <p class="bolder">What we do</p>
             <hr>
@@ -193,33 +222,66 @@
                 <img src="imgs/whatwedoimg.png" alt="">
                 <div class="info-content">
                     <details>
-                        <summary><img src="imgs/PICTURE.png" alt="">PHOTOGRAPHY</summary>
+                        <summary><img src="imgs/PICTURE.png" alt="">PHOTOGRAPHY<i class="fa fa-angle-down" aria-hidden="true"></i></summary>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque obcaecati quasi repellendus unde ex blanditiis rem voluptatum rerum dolores culpa, sequi quis perspiciatis alias quidem ipsum veniam provident exercitationem eum!
-                            Voluptatum eligendi doloribus quibusdam totam ullam facilis tempore reprehenderit.</p>
+                            Voluptatum eligendi doloribus quibusdam totam ullam facilis tempore reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem dolores id, dignissimos aliquid nemo adipisci, labore voluptatum quasi!
+                            Omnis quas doloribus sapiente reprehenderit officia dolores iusto necessitatibus corporis a, quasi magnam accusantium porro pariatur voluptatem voluptatibus odio praesentium. Voluptate, quidem?</p>
                     </details>
                     <details>
-                        <summary><img src="imgs/EQUALIZER.png" alt="">CREATIVITY</summary>
+                        <summary><img src="imgs/EQUALIZER.png" alt="">CREATIVITY<i class="fa fa-angle-down" aria-hidden="true"></i></summary>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, dolor numquam adipisci quibusdam sapiente eligendi non animi ullam quam ut accusantium maiores ex, natus odio error. Amet recusandae, ratione animi repellendus vero
-                            quam vel numquam saepe omnis deleniti, molestiae illo necessitatibus dolorum similique porro sed itaque libero autem incidunt cum accusamus tempora repellat obcaecati cumque! Debitis eaque blanditiis, obcaecati quia!</p>
+                            quam vel numquam saepe omnis deleniti, molestiae illo necessitatibus dolorum similique porro sed itaque libero autem incidunt cum accusamus tempora repellat obcaecati cumque! Debitis eaque blanditiis, obcaecati quia! Lorem
+                            ipsum dolor sit amet, consectetur adipisicing elit. Suscipit unde ratione tenetur architecto, iusto delectus! Possimus id repellat maxime quam, nobis, fuga ea tempore ipsam harum illum incidunt veniam nisi. Officiis expedita
+                            nam, quaerat ipsum error culpa incidunt nisi deleniti.</p>
                     </details>
                     <details>
-                        <summary><img src="imgs/BULLSEYE.png" alt="">WEB DESIGN</summary>
+                        <summary><img src="imgs/BULLSEYE.png" alt="">WEB DESIGN<i class="fa fa-angle-down" aria-hidden="true"></i></summary>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae repellendus deleniti minus eligendi culpa eos, praesentium necessitatibus asperiores a aliquam inventore consequuntur non magni voluptates cumque! Iste ratione,
-                            deleniti obis dolores maxime cum. Tempore veritatis, assumenda eaque aspernatur est quibusdam!</p>
+                            deleniti obis dolores maxime cum. Tempore veritatis, assumenda eaque aspernatur est quibusdam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis eos blanditiis inventore. Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit. Dicta distinctio ut debitis ad, hic est nobis, dolor dolores officiis libero! Eveniet beatae, velit asperiores cumque optio doloribus autem, quo quos!</p>
                     </details>
                 </div>
-
             </div>
         </div>
     </section>
-    <div class="slicker"></div>
+    <div class="slicker">
+        <div class="slicker-slider">
+            <div class="slick-item">
+                <img src="imgs/speech.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+            <div class="slick-item">
+                <img src="imgs/speech.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+            <div class="slick-item">
+                <img src="imgs/speech.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+            <div class="slick-item">
+                <img src="imgs/speech.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="who-we-are">
-        <div class="who-we-are-container">
+        <div class="who-we-are-container container">
             <h2>Who we are</h2>
             <p class="bolder">Meet our team</p>
             <hr>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione tempora quis voluptates nostrum, rerum magnam. Dolor deleniti totam, enim a, repellat nihil fugit voluptate nulla asperiores ab labore blanditiis eaque.</p>
-
             <div class="members">
                 <div class="member">
                     <div class="member-face face1">
@@ -237,7 +299,6 @@
                     <h4>Mathew Dix</h4>
                     <p class="job">Graphic Designer</p>
                 </div>
-
                 <div class="member">
                     <div class="member-face face2">
                         <div class="member-social">
@@ -273,9 +334,18 @@
             </div>
         </div>
     </section>
-    <div class="logos"></div>
+    <div class="logos">
+        <div class="container logos-container">
+            <img src="imgs/logo1.png" alt="">
+            <img src="imgs/logo4.png" alt="">
+            <img src="imgs/logo3.png" alt="">
+            <img src="imgs/logo2.png" alt="">
+            <img src="imgs/logo5.png" alt="">
+            <img src="imgs/logo6.png" alt="">
+        </div>
+    </div>
     <section id="what-we-do2">
-        <div class="what-we-do-container2">
+        <div class="what-we-do-container2 container">
             <h2>What We Do</h2>
             <p class="bolder">Some of our work</p>
             <hr>
@@ -340,9 +410,40 @@
             </div>
         </div>
     </section>
-    <div class="slicker"></div>
+    <div class="slicker">
+        <div class="slicker-slider">
+            <div class="slick-item2">
+                <img src="imgs/earle.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis, quos.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+            <div class="slick-item2">
+                <img src="imgs/earle.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, libero.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+            <div class="slick-item2">
+                <img src="imgs/earle.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit, est.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+            <div class="slick-item2">
+                <img src="imgs/earle.png" alt="">
+                <div class="slick-content">
+                    <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem sed quis tempora necessitatibus nesciunt alias quo optio quasi odit tenetur. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam, tempore.</q>
+                    <cite>Jon Doe</cite>
+                </div>
+            </div>
+        </div>
+    </div>
     <section id="happy-clients">
-        <div class="happy-clients-container">
+        <div class="happy-clients-container container">
             <h2>Happy Clients</h2>
             <p class="bolder">What people say</p>
             <hr>
@@ -387,7 +488,7 @@
         </div>
     </section>
     <section id="our-stories">
-        <div class="our-stories-container">
+        <div class="our-stories-container container">
             <h2>Our stories</h2>
             <p class="bolder">Latest blog</p>
             <hr>
@@ -404,7 +505,7 @@
                     <div class="blog-stats">
                         <i class="fa fa-eye" aria-hidden="true"></i>
                         <p>254</p>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
                         <p>32</p>
                     </div>
                 </div>
@@ -420,7 +521,7 @@
                     <div class="blog-stats">
                         <i class="fa fa-eye" aria-hidden="true"></i>
                         <p>643</p>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
                         <p>41</p>
                     </div>
                 </div>
@@ -436,83 +537,99 @@
                     <div class="blog-stats">
                         <i class="fa fa-eye" aria-hidden="true"></i>
                         <p>12342</p>
-                        <i class="fa fa-commenting-o" aria-hidden="true"></i>
+                        <i class="fa fa-commenting" aria-hidden="true"></i>
                         <p>77</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <div class="map">
-        <img src="imgs/PIN2.png" alt="">
-        <p class="bolder">Open Map</p>
-        <hr>
-    </div>
-    <div class="page-details">
-        <div class="colums">
-            <div class="about">
-                <p>MoGo</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus hic atque, reiciendis explicabo, unde veritatis soluta tempora dolorum debitis nihil! Placeat aspernatur ullam blanditiis illo officiis explicabo, officia reiciendis?</p>
-                <p><span>15k </span>followers</p>
-                <div class="follow-us">
-                    <p>Follow Us:</p>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                    <i class="fa fa-instagram" aria-hidden="true"></i>
-                    <i class="fa fa-google-plus" aria-hidden="true"></i>
-                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
-                </div>
-                <div class="subscribe">
-                    <form action="">
-                        <input type="email">
-                        <button>SUBSCRIBE</button>
-                    </form>
-                </div>
-            </div>
-            <div class="col">
-                <h6>BLOGS</h6>
-                <div class="blogs">
-                    <div class="blog">
-                        <img src="imgs/blog1.png" alt="">
-                        <div class="blog-info">
-                            <p></p>
-                            <time></time>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="imgs/blog2.png" alt="">
-                        <div class="blog-info">
-                            <p></p>
-                            <time></time>
-                        </div>
-                    </div>
-                    <div class="blog">
-                        <img src="imgs/blog3.png" alt="">
-                        <div class="blog-info">
-                            <p></p>
-                            <time></time>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <h6>INSTAGRAM</h6>
-                <div class="insta-imgs">
-                    <img src="imgs/inst1.png" alt="">
-                    <img src="imgs/inst2.png" alt="">
-                    <img src="imgs/inst3.png" alt="">
-                    <img src="imgs/inst4.png" alt="">
-                    <img src="imgs/inst5.png" alt="">
-                    <img src="imgs/inst6.png" alt="">
-                    <img src="imgs/inst7.png" alt="">
-                    <img src="imgs/inst8.png" alt="">
-                    <img src="imgs/inst9.png" alt="">
-                </div>
-                <p>View more photos</p>
-            </div>
+    <div class="map-banner">
+        <div class="open-map">
+            <img src="imgs/PIN2.png" alt="">
+            <p class="bolder">Open Map</p>
+            <hr>
+        </div>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8556.890217796616!2d-73.9819396571628!3d40.6890035154473!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x240f4dbd7f57aa4c!2sLIU-+Brooklyn!5e0!3m2!1spl!2spl!4v1486399348617" width="600"
+                height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                <i class="fa fa-times cross" aria-hidden="true"></i>
         </div>
     </div>
+    <div id="contact" class="page-details container">
+        <div class="about">
+            <h3>MoGo</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim temporibus hic atque, reiciendis explicabo, unde veritatis soluta tempora dolorum debitis nihil! Placeat aspernatur ullam blanditiis illo officiis explicabo, officia reiciendis?</p>
+            <p><span>15k </span>followers</p>
+            <div class="follow-us">
+                <p>Follow Us:</p>
+                <a href="http://facebook.com" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="http://twitter.com" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="http://pinterest.com" target="_blank"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+                <a href="http://instagram.com" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="http://google.com" target="_blank"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                <a href="http://youtube.com" target="_blank"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+            <div class="subscribe">
+                <form action="#">
+                    <input type="email" placeholder="Your Email">
+                    <button>SUBSCRIBE</button>
+                </form>
+            </div>
+        </div>
+        <div class="col">
+            <h6>BLOGS</h6>
+            <div class="last-blogs">
+                <div class="last-blog">
+                    <img src="imgs/blog1.png" alt="">
+                    <div class="blog-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <time>Jan 9, 2016</time>
+                    </div>
+                </div>
+                <div class="last-blog">
+                    <img src="imgs/blog2.png" alt="">
+                    <div class="blog-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <time>Jan 9, 2016</time>
+                    </div>
+                </div>
+                <div class="last-blog">
+                    <img src="imgs/blog3.png" alt="">
+                    <div class="blog-info">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                        <time>Jan 9, 2016</time>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h6>INSTAGRAM</h6>
+            <div class="insta-imgs">
+                <img src="imgs/inst1.png" alt="">
+                <img src="imgs/inst2.png" alt="">
+                <img src="imgs/inst3.png" alt="">
+                <img src="imgs/inst4.png" alt="">
+                <img src="imgs/inst5.png" alt="">
+                <img src="imgs/inst6.png" alt="">
+                <img src="imgs/inst7.png" alt="">
+                <img src="imgs/inst8.png" alt="">
+                <img src="imgs/inst9.png" alt="">
+            </div>
+            <a href="http://instagram.com" target="_blank">View more photos</a>
+        </div>
+    </div>
+    <footer>&copy; 2016 MoGo free PSD template by <a href="https://www.behance.net/laaqiq" target="_blank"><span>Laaqiq</span></a></footer>
+    <script src="functions/closeDetails.js"></script>
+    <script src="functions/mapPopup.js"></script>
+    <script src="functions/scrollProgress.js"></script>
+    <script src="functions/fixMenu.js"></script>
+    <script src="functions/mobMenu.js"></script>
+
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
+      <script src="functions/queryScripts.js"></script>
     <script type="text/javascript" src="http://localhost:35729/livereload.js"></script>
 </body>
 
